@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital", "Hospital.csproj", "{464C7DD3-9FBF-4822-A2EE-1909D1A857C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models.csproj", "{820B8A37-79A9-4DD5-9407-010A257A41BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAOControllers", "..\DAOControllers\DAOControllers.csproj", "{DC283257-1DF0-4382-8391-27F2652B2521}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{464C7DD3-9FBF-4822-A2EE-1909D1A857C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464C7DD3-9FBF-4822-A2EE-1909D1A857C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464C7DD3-9FBF-4822-A2EE-1909D1A857C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464C7DD3-9FBF-4822-A2EE-1909D1A857C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820B8A37-79A9-4DD5-9407-010A257A41BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820B8A37-79A9-4DD5-9407-010A257A41BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820B8A37-79A9-4DD5-9407-010A257A41BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820B8A37-79A9-4DD5-9407-010A257A41BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC283257-1DF0-4382-8391-27F2652B2521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC283257-1DF0-4382-8391-27F2652B2521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC283257-1DF0-4382-8391-27F2652B2521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC283257-1DF0-4382-8391-27F2652B2521}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
