@@ -29,9 +29,9 @@ namespace Hospital.Controllers
         //Get
         [HttpGet]
         [Route("GetLabResult/{id}")]
-        public async Task<LaboratoryResult> GetLabResult(int idlabResult)
+        public async Task<LaboratoryResult> GetLabResult(int idLabResult)
         {
-            LaboratoryResult labResult = await _labResultRepository.GetById(idlabResult);
+            LaboratoryResult labResult = await _labResultRepository.GetById(idLabResult);
 
             return labResult;
         }//End get medicament by id

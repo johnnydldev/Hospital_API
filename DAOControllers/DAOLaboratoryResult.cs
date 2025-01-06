@@ -96,11 +96,12 @@ namespace DAOControllers
 
                 using (var objConnection = new SqlConnection(_connection))
                 {
-                    SqlCommand cmd = new SqlCommand("SP_Update_Medicament", objConnection);
+                    SqlCommand cmd = new SqlCommand("SP_Update_Lab_Result", objConnection);
                     cmd.Parameters.AddWithValue("idLaboratoryResult", labResult.idLaboratoryResult);
                     cmd.Parameters.AddWithValue("test", labResult.test);
                     cmd.Parameters.AddWithValue("resultValue", labResult.resultValue);
-                    cmd.Parameters.AddWithValue("dateDone", DateTime.Now); cmd.Parameters.Add("response", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    cmd.Parameters.AddWithValue("dateDone", DateTime.Now); 
+                    cmd.Parameters.Add("response", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     await objConnection.OpenAsync();
@@ -187,7 +188,7 @@ namespace DAOControllers
                     SqlDataReader reader;
                     SqlCommand cmd;
 
-                    cmd = new SqlCommand("SP_Get_Lab_Result_By_Id", objConnection);
+                    cmd = new SqlCommand("SP_Get_LabResult_By_Id", objConnection);
                     cmd.Parameters.AddWithValue("idLabResult", idLabResult);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
