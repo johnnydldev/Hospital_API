@@ -25,6 +25,7 @@ namespace Hospital
             builder.Services.AddScoped<IGenericRepository<Medicament>, DAOMedicament>();
             builder.Services.AddScoped<IGenericRepository<LaboratoryResult>, DAOLaboratoryResult>();
             builder.Services.AddScoped<IGenericRepository<Doctor>, DAODoctor>();
+            builder.Services.AddScoped<IGenericRepository<Patient>, DAOPatient>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
